@@ -1,0 +1,139 @@
+@import url(style.css);
+
+.bodylocal {
+    color: var(--color-text);
+    margin-top: 230px;
+    box-sizing: border-box;
+}
+.h1 {
+    height: 200px;
+    font-size: 3.75rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2.40em;
+    margin: 1.67em ;
+    color: var(--color-text);
+    text-align: center;
+}
+#banner {
+    height: 393px;
+    
+}
+.flow-text {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: var(--color-text);
+}
+.textil {
+    color: var(--color-text);
+    text-align: justify;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.grap {
+    margin: 20px 0;
+    padding-left: 1.7rem;
+    border-left: 5px solid var(--color-border1);
+    line-height: 0.6rem;
+    margin-right: 65px;
+    transition: border 2s ease;
+}
+.content {
+    display: block;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 1000px;
+}
+.info-user {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+img.profile {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: auto;
+    display: flex;
+    border: 5px solid var(--color-border1);
+    transition: border 2s ease;
+}
+.my-profile {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+.animes {
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+    justify-content:center;
+
+}
+.responsive-img {
+    width: 50%;
+    height: 300px;
+    margin: 15px;
+}
+.lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lists a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--color-text);
+}
+.lists a:hover {
+    text-decoration: underline 2px #f0ad4e;
+}
+.music {
+    margin: 15px;
+}
+.music2 {
+    margin: 15px;
+}
+/* responsive call*/
+@media (max-width: 810px){
+    .my-profile {
+        display: block;
+    }
+    .info-user {
+        display: inline-flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .colum {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content:center;
+        margin: 0 auto;
+        clear: both;
+    }
+    .animes {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+    }
+    .lists {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+}
+@media (max-width: 503px){
+    #banner {
+        min-width: 472px;
+        margin: 0 auto;
+    }
+}
+/*Fim do Fim*/

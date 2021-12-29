@@ -1,0 +1,93 @@
+/*import do outro documento CSS para usar uma cor pré-estabelecida.*/
+@import url(style.css);
+/*{
+    box-sizing: content-box; 
+}*/
+body {
+    font-family: 'roboto';
+    margin: 0px;
+    /*margin: 0px;*/
+    margin-top: 120px;
+}
+.content {
+    display: flex; 
+    justify-content: center;
+    font-family: 'roboto';
+}
+.contato {
+    width: 100%;
+    min-width: 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    color: var(--color-text);
+    text-align: center;
+}
+.form {
+    display: inline-flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+.field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px; 
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    width: 420px;
+    min-width: 320px;
+}
+.lab {
+    text-align: left;
+    color: var(--color-text);
+    margin-right: 15px;
+}
+textarea {
+    height: 150px;
+    min-height: 150px;
+}
+#submit {
+    width: 442px;
+    color: var(--color-text);
+}
+#submit:hover {
+    background-color: #655e8a;
+    cursor: pointer;
+}
+input, textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    max-width: 100%;
+
+}
+.tag-enter {
+    min-width: 472px;
+}
+/*parte responsavel por disparar o erro subtituto da burble*/
+.input span.error {
+    
+    padding: 0;
+    color: var(--color-text);
+    background-color: rgba(255, 0, 0, 0.2);
+    margin: 15px;
+}
+.input span.error.active {
+    border: 1px solid red;
+}
+.text-form {
+    font-weight: bolder;
+    margin: 15px;
+    color: var(--color-text);
+}
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="shortcut icon" href="Img/selton.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+  <link rel="stylesheet" href="CSS/estilo-1.css">
+  <link rel="stylesheet" href="CSS/menu-responsivo.css">
+  <script src="Scripts/script.js" defer></script>
+  <script src="Scripts/Darkmode.js" defer></script>
+  <script src="Scripts/Year.js" defer></script>
+  <script src="Scripts/menu.js" defer></script>
+  <title>Entre em contato</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <div class="adjusty">
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <div class="container">
+          <div class="toggle">
+
+            <ul>
+              <li> <a href="index.html"></i>Home</a></li>
+              <li> <a href="projects.html">Projetos</a></li>
+              <li> <a href="about.html">Sobre</a></li>
+              <li> <a href="contact.html">Contato</a></li>
+
+              <!--Container Darkmode-->
+
+            </ul>
+            <div class="dark-">
+              <div class="ico-nav">
+                <i class="im im-umbrella"></i>
+              </div>
+              <input id="switch" type="checkbox" name="theme">
+              <label class="label1" for="switch"></label>
+              <div class="ico-nav">
+                <i class="im im-sun"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="tag-enter">
+    <h1>Entre em contato comigo!</h1>
+  </div>
+  <!--Bug de responsividade averiguar, amanhã...-->
+  <section class="div1">
+    <!--nesse formulario eu optei por usar uma div genérica, pois o select estava trazendo um bug muito irritante no CSS :\) -->
+
+    <section class="content">
+
+      <div class="contato">
+
+        <h3>Formulário de contato</h3>
+
+        <form class="form" action="./PHP/email.php" method="POST" enctype="multipart/form-data">
+
+          <!-- optei por usar a tag label para os textos do formulário e coloquei um for ligado ao ID para o formulário ficar mais dinâmico-->
+          <div class="input">
+            <P class="text-form">Nome:</P>
+            <input class="field" id="name" type="text" name="name" placeholder="Nome" required minlength="2">
+            <span class="error"></span>
+          </div>
+          <div class="input">
+            <P class="text-form">E-mail:</P>
+            <input class="field" id="email" type="email" name="email" placeholder="E-mail" required
+              pattern="^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
+              title="Escreva o seu e-mail de forma correta. Ex: abc@gmail.com">
+            <span class="error"></span>
+          </div>
+          <div class="input">
+            <P class="text-form">Sua menssagem:</P>
+            <textarea class="field" id="message" name="message" placeholder="digite sua menssagem aqui."
+              required></textarea>
+            <span class="error"></span>
+          </div>
+          <input class="field" id="submit" type="submit" value="Enviar">
+        </form>
+
+      </div>
+    </section>
+  </section>
+  <footer>
+    <div class="Rights">
+      <!--espaço esquedo do rodapé-->
+      <div class="float-letf">
+        <div class="place">
+          <i class="im im-location"> </i>
+          <span class="text">Rua Marajó N° 16 - Mangaratiba,
+            RJ.
+          </span>
+        </div>
+
+
+        <div class="phone">
+          <i class="im im-phone"></i>
+          <span class="text">+55 21 9952-77386</span>
+        </div>
+
+        <div class="email">
+          <i class="im im-paperplane"></i>
+          <span class="text">selton.alex.1999@gmail.com</span>
+        </div>
+      </div>
+      <!--espaço central do ropapé-->
+      <div class="mid">
+        <p><a href="#">SeltonSouza4</a>
+          © <span id="year"></span>. Todos os direitos reservados.
+        </p>
+      </div>
+      <!--espaço direito, responsavél pelelas mídias sociais-->
+      <div class="float-right">
+        <P>Me siga nas redes:</P>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100006706087656" target="_blank" title="Facebook"><i
+              class="im im-facebook"></i></a>
+          <a href="https://twitter.com/SeltonSouza4" target="_blank" title="Twitter"><i class="im im-twitter"></i></a>
+          <a href="https://github.com/SeltonSouza" target="_blank" title="Github"><i class="im im-github"></i></a>
+          <a href="https://www.linkedin.com/in/selton-souza-2686171a5/" target="_blank" title="LinkedIn"><i
+              class="im im-linkedin"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5521995277386&text=Ol%C3%A1%20Selton%2C%20vim%20pelo%20
+          seu%20site%2Fportf%C3%B3lio.%20Achei%20ele%20bem%20legal%2C%20e%20queria%20vir%20aqui%20te%20parabenizar
+          %20ou%20oferecer%20uma%20vaga%20de%20emprego.%20" target="_blank" title="Whatsapp"><i
+              class="im im-whatsapp"></i></a>
+          <a href="https://www.youtube.com/channel/UCzWvlvMRa8xtTkHi1mfrQpA" target="_blank" title="Youtube"><i
+              class="im im-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
