@@ -1,35 +1,32 @@
-<?php 
+<?php
+  //Variáveis
+  $nome = $_POST['name'];
+  $email = $_POST['email'];
+  $mensagem = $_POST['message'];
+  $data_envio = date('d/m/Y');
+  $hora_envio = date('H:i:s');
 
-    if (isset ($_POST['email']) && !empty ($_POST['email'])) { 
+  //Compo E-mail
+  $arquivo = "
+    <html>
+      <p><b>Nome: </b>$nome</p>
+      <p><b>E-mail: </b>$email</p>
+      <p><b>Mensagem: </b>$mensagem</p>
+      <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+    </html>
+  ";
+  
+  //Emails para quem será enviado o formulário
+  $destino = "selton.alex.1999@gmail.com";
+  $assunto = "Contato pelo Site";
 
-        $nome = addcslashes ($_POST['name']);
-        $email = addcslashes ($_POST['email']);
-        $message = addcslashes ($_POST['message']);
+  //Este sempre deverá existir para garantir a exibição correta dos caracteres
+  $headers  = "MIME-Version: 1.0\n";
+  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+  $headers .= "From: $nome <$email>";
 
-
-        
-        $to = "selton.alex.1999@gmail.com";
-        $subject = "contato - Selton Souza";
-        $body = "Nome: ". $nome. "\n".
-                "Email: ". $email."\n".    
-                "Mensagem: ". $message;
-        // NESSA PARTE DO "FROM" OPTEI POR COLOCAR UM OUTRO G-MAIL QUE EU TENHO MAS, QUANDO FOR OSPEDAR EM UM SERVIDO O '@' TEM QUE SER PERTENCENTE AO DOMINIO DO SERVIDOR/SITE.\\ 
-        
-        $header  = "From:asgard.selton@gmail.com". "\r\n".
-                    "Replay-To:". $email. "\r\n".       
-                    "X=Mailer:PHP/".phpversion ();
-        
-        //NESSA PARTE PODERIAMOS FAZER UMA CONDIÇÃO PARA O TRATAMENTO DO ERRO MAS, FICA AO CRITÉRIO DE VOCÊS :)\\            
-        if (mail ($to, $subject, $body, $header)) {
-
-            echo ("Email Enviado Com sucesso!");
-            echo ("Você será redirecionado dentro de 10 segundos...");
-            echo "<meta http-equiv='refresh' content='10;URL=\Projeto-site\contact.html'>"; 
-        } else {
-            echo ("Erro ao Enviar o E-mail, certifique-se que está preenchendo tudo corretamente.");
-            echo ("Você será redirecionado dentro de 10 segundos...");
-            echo "<meta http-equiv='refresh' content='10;URL=\Projeto-site\contact.html'>"; 
-        }
-
-    }    
+  //Enviar
+  mail($destino, $assunto, $arquivo, $headers);
+  
+  echo "<meta http-equiv='refresh' content='10;URL=../contact.html'>";
 ?>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.68">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
@@ -14,10 +14,6 @@
     <link rel="shortcut icon" href="Img/selton.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
-    <script src="Scripts/Darkmode.js" defer></script>
-    <script src="Scripts/MyAge.js" defer></script>
-    <script src="Scripts/Year.js" defer></script>
-    <script src="Scripts/menu.js" defer></script>
     <title>Projetos</title>
 </head>
 
@@ -272,7 +268,7 @@
             </div>
             <!--espaço central do ropapé-->
             <div class="mid">
-                <p><a href="#">SeltonSouza4</a>
+                <p><a href="https://github.com/SeltonSouza">SeltonSouza4</a>
                     © <span id="year"></span>. Todos os direitos reservados.
                 </p>
             </div>
@@ -299,6 +295,25 @@
         </div>
     </footer>
 
+    <script src="Scripts/Darkmode.js" defer></script>
+    <script src="Scripts/MyAge.js" defer></script>
+    <script src="Scripts/Year.js" defer></script>
+    <script src="Scripts/menu.js" defer></script>
+
+    <script>
+        // Redirect to https
+        if (("seltonsouza.dev.br" == window.location.host) && (window.location.protocol != "https:")) window.location.protocol = "https";
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CNF714JST"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0CNF714JST');
+    </script>
 </body>
 
 </html>

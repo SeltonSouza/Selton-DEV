@@ -28,7 +28,7 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right:auto;
-  max-width: 800px;
+  max-width: 68%;
   background-color: var(--bg-panel);
   padding: 15px;
   border-radius: 5px;
@@ -60,7 +60,7 @@ h1 {
   
 }
 
-header {
+.perfil-git {
   background-image: url('https://wallpapertag.com/wallpaper/full/4/3/2/465141-beautiful-anime-wallpaper-1920x1200-for-4k.jpg');
   background-size:cover;
   height: 200px;
